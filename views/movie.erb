@@ -1,0 +1,20 @@
+<h2 class="movie-title"><%= movie["Title"] %></h2>
+<h3>(<%= movie["Year"] %>)</h3>
+<p><%= movie["Runtime"] %></p>
+
+<div class="poster">
+    <img class="shadow" src="<%= movie["Poster"] %>">
+    <p class="plot"><%= movie["Plot"] %></p>
+</div>
+<p class="genre"><%= movie["Genre"] %></p>
+<div class="ratings">
+    <% movie["Ratings"].each do |index| %>
+        <div>
+            <p><i class="fa fa-star" aria-hidden="true"></i><%= [index][0]["Value"] %></p>
+            <p class="source"><%= [index][0]["Source"] %></p>
+        </div>
+    <% end %>
+</div>
+<p><span class="description">Stars: </span> <%= movie["Actors"] %></p>
+<p><span class="description">Director: </span><%= movie["Director"] %></p>
+

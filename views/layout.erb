@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <nav>
+            <a href="/"><i class="fa fa-film" aria-hidden="true"></i></i>HOME</a>
+            <a class="menu" href="/about"><i class="fa fa-ticket" aria-hidden="true"></i>ABOUT</a>
+        </nav>
+        <h1>CINEMA LOVERS</h1>
+        <form action="/results">
+            <input name="search" type="text" placeholder="Search..."><button><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+
+        <%= yield %>
+
+    </div>
+
+</body>
+</html>
