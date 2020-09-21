@@ -1,4 +1,4 @@
-![Banner](/public/banner-movies-1.gif)
+![Banner](/public/banner-movies.gif)
 
 ## The Project
 
